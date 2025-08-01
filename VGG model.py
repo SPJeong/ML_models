@@ -25,6 +25,7 @@ class VGG_net(nn.Module):
 
   def forward(self, x):
     x = self.conv_layers(x)
+    #print(x.shape)
     x = x.reshape(x.shape[0], -1)
     x = self.fc(x)
     return x
