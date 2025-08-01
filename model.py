@@ -7,8 +7,7 @@ VGG_types = {
     'VGG13': [64, 64, 'Max_Pool', 128, 128, 'Max_Pool', 256, 256, 'Max_Pool', 512, 512, 'Max_Pool', 512, 512, 'Max_Pool'],
     'VGG16': [64, 64, 'Max_Pool', 128, 128, 'Max_Pool', 256, 256, 256, 'Max_Pool', 512, 512, 512, 'Max_Pool', 512, 512, 512, 'Max_Pool'],
     'VGG19': [64, 64, 'Max_Pool', 128, 128, 'Max_Pool', 256, 256, 256, 256, 'Max_Pool', 512, 512, 512, 512, 'Max_Pool', 512, 512, 512, 512, 'Max_Pool']
-} #then flattern and 4096x4096x1000 Linear layers
-
+} 
 
 class VGG_net(nn.Module):
   def __init__(self, in_channels= 3, num_classes= 100): # e.g. 100 for num_classes
