@@ -70,7 +70,6 @@ class conv_block(nn.Module):
 
 
 # Sanity check
-if __name__ == '__main__':
-  x = torch.randn(3, 3, 224, 224)
-  model = GoogLeNet()
-  print(model(x).shape)
+#x = torch.randn(3, 3, 224, 224)
+#model = GoogLeNet()
+#print(model(x).shape)
